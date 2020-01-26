@@ -7,7 +7,7 @@ import 'package:desafio_neumorphic/app/modules/shared/neuromorphic_container/neu
 main() {
   testWidgets('NeuromorphicContainerWidget has message',
       (WidgetTester tester) async {
-    await tester.pumpWidget(buildTestableWidget(NeuromorphicContainerWidget()));
+    await tester.pumpWidget(buildTestableWidget(NeuromorphicContainerWidget(color: null,)));
     final textFinder = find.text('NeuromorphicContainer');
     expect(textFinder, findsOneWidget);
   });
